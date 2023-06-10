@@ -1,6 +1,5 @@
 # String Methods
 
-
 string1 = 'sample date For test'
 
 # 1. convert first character of each word into uppercase
@@ -50,7 +49,7 @@ print(2 + 5*8 -2)
 print(4.0/2.0)          # float / float = float
 print(4/2)          # int / int = float
 
-
+# ________________________________________________________________________________
 # Misc info 
 # 1. Assign multiple variables in a single line
 x,y,z = 'Hello', 23, 3.14

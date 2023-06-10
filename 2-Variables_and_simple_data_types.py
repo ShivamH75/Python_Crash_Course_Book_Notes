@@ -62,4 +62,6 @@ print(oneCrore)
 # 3. CONSTANTS - Py dont have inbuilt constant types, but CAPS can be used as good practice
 PI_VALUE = 3.14
 
+# 4. Zen of Python - Philosophy to write code. in py interpreter, write 
+# import this
 # ________________________________________________________________________________

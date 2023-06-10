@@ -17,3 +17,22 @@ userName = 'Shivam'
 userCity = 'Nashik'
 convertedFstring = f'{userName} is from {userCity} City'
 print(convertedFstring)
+
+# Add Whitespaces (whitespaces means non-printable characters like tabs and spaces)
+print('Languages: \n\tPython\n\tJavascript')
+
+# Remove Whitespaces from left and right
+string2 = " string with whitespaces on left and right    "
+string2_2 = string2.lstrip()
+string2_3 = string2.rstrip()
+
+print(string2_3)
+
+# Remove prefixes and suffixes from string
+stringWithPrefixAndSuffix = 'https://wikipedia.com'
+
+print(stringWithPrefixAndSuffix.removeprefix('https://').removesuffix('.com'))
+
+# Escape with single or double quotes as a part of string 
+print("He said \"Hello\"")
+print('He shouted, \'Run!\'')   

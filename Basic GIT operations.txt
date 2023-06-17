@@ -8,6 +8,7 @@ create folder, git bash here
 2. Link with GitHub
 
 
+
 3. Add local file to GitHub
 >> git add <file_name>
 >> git commit -m "<comments for commit>"

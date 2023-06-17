@@ -4,3 +4,5 @@ create folder, git bash here
 >> git init
 >> git config -g user.name ShivamH75
 >> git config -g user.email hundekari.shivam45@gmail.com
+
+2. Link with GitHub

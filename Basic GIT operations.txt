@@ -12,3 +12,6 @@ create folder, git bash here
 >> git add <file_name>
 >> git commit -m "<comments for commit>"
 >> git push -u origin <github branch name>
+
+4. If files are updated in gitHub, update locally
+>> git pull

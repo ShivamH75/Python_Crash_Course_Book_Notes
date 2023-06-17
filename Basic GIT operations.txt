@@ -6,6 +6,9 @@ create folder, git bash here
 >> git config -g user.email hundekari.shivam45@gmail.com
 
 2. Link with GitHub
+Open Git Bash.
+Paste the text below, substituting in your GitHub email address.
+>> ssh-keygen -t ed25519 -C "hundekari.shivam45@gmail.com"
 
 
 

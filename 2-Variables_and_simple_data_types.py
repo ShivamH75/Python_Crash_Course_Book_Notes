@@ -36,6 +36,11 @@ print(stringWithPrefixAndSuffix.removeprefix('https://').removesuffix('.com'))
 print("He said \"Hello\"")
 print('He shouted, \'Run!\'')   
 
+# _______________________________________________________________________________
+# format method for printing values in the string, using indexes
+name = "Shivam"
+company = "Jio"
+print("Hello {0}, your company is {1}!".format(name,company))
 
 # ________________________________________________________________________________
 # Numbers 

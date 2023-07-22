@@ -21,3 +21,21 @@ print (sampleDict)
 #  To modify value of any kwy within a dictionary
 sampleDict['Car'] = 'Mercedes Benz G-Wagon'
 print (sampleDict)
+
+#  To Delete Entire key-value pair - use 'del' keyword and keyname within []
+
+del sampleDict['company']
+print(sampleDict)
+
+# Store one type of info of many ojects
+favLanguages = {
+    'john' : 'ruby',
+    'steven' : 'pearl',
+    'shivam' : 'pythOn'
+} 
+
+print(f"Shivam's fav language is {favLanguages['shivam'].title()}")
+
+#  if the we mention some key which is not in dictionary, we get 'KeyError'
+# print(f"Shivam's fav language is {favLanguages['rahul'].title()}")    
+

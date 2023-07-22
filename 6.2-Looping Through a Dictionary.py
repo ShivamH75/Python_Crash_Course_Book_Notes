@@ -33,7 +33,9 @@ favLanguages1 = {
     'manoj' : 'assembly',
     'pravin' : 'cotlin',
     'PranaY' : 'javascript',
-    'rishikesh' : 'ABab'
+    'rishikesh' : 'ABab',
+    'harry': 'python',
+    'dhiraj' : 'python'
 } 
 
 # print names of all the keys
@@ -62,3 +64,12 @@ for name in sorted(favLanguages1.keys()):      #print keys in ascending order
 
 # _________________________________________________________________
 #  Looping Through All the VALUES in a Dictionary
+#  we can print all the values using the 'values()' method
+print("following programming languages has been mentioned: ")
+for val in sorted(favLanguages1.values()):
+    print(val.title(), end=" ")
+
+# print unique values using 'set'
+print("\n")
+for val in sorted(set(favLanguages1.values())):
+    print(val.title(), end=" ")

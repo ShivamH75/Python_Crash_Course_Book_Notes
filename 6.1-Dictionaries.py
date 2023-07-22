@@ -39,3 +39,9 @@ print(f"Shivam's fav language is {favLanguages['shivam'].title()}")
 #  if the we mention some key which is not in dictionary, we get 'KeyError'
 # print(f"Shivam's fav language is {favLanguages['rahul'].title()}")    
 
+#  To handle situation when key is not preset in dictionary, use the 'get()' method
+print(f"Shivam's fav language is {favLanguages.get('rahul')}")   #by default it returns 'None'
+print(f"Shivam's fav language is {favLanguages.get('rahul', 'Key not found')}")         #we can also assign the message if the key is not found
+
+
+ 

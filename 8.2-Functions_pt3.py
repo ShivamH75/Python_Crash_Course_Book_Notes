@@ -13,9 +13,10 @@ greetUser(boyNames)         # we have passed list as a argument in the function
 greetUser(girlNames)
 
 
-## Modifying a List in a Function #function that converts elements of list into title case
+## Modifying a List in a Function 
 
 def formatterFunction(ogList): 
+    '''function that converts elements of list into title case'''
     sampleList = []
     while ogList:
         current_design = ogList.pop()

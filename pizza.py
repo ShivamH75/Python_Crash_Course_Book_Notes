@@ -48,13 +48,47 @@ def calculate_pizza_price(size, *Toppings):
 
 
 # 2. **Display Menu:** Write a function that displays a menu of different pizza options along with their descriptions and prices. You can use dictionaries or lists to store the menu items and details.
+pizza_tuple = (
+    "Margherita",
+    "Pepperoni",
+    "Veggie Supreme",
+    "Hawaiian",
+    "BBQ Chicken",
+    "Meat Lovers",
+    "Four Cheese",
+    "Mediterranean",
+    "Pesto Delight",
+    "Buffalo Ranch"
+)
 
-# display_menu
+import time
+
+# a carriage return (\r) character to move the cursor back to the beginning of the line. This will effectively overwrite the previous output with the new output. 
+
+def display_menu(tupleName):
+    '''function to display all the elements of tuple'''
+    for pizza in tupleName:
+        print(f"-{pizza}")
+
+# display_menu(pizza_tuple)
 
 
 # 3. **Order Tracker:** Build a function that simulates an order tracker for a pizza place. Users can place orders, and the function can keep track of the order status (cooking, out for delivery, delivered).
 
-# track_order_status
+def track_order_status():
+    placingOrder = ['Placing your order.', 'Placing your order..', 'Placing your order...', 'Placing your order.', 'Placing your order..', 'Placing your order...', "Order is placed."]
+    print("Your order is being processed. ")
+    for order in placingOrder:
+        print(order, end='\r')
+        time.sleep(1)
+
+    makingPizza = ['Making pizza base...', 'adding sauce...', 'adding cheese...', 'adding toppings...', 'baking your pizza...', 'putting in the box...', 'Your Order is Ready!!' ]
+    print("Your pizza is getting ready..")
+    for order in makingPizza:
+        print(order, end='\r')
+        time.sleep(2)
+
+# track_order_status()
 
 
 # 4. **Pizza Recommendation:** Create a function that takes the customer's preferred crust type, toppings, and dietary restrictions as inputs and recommends a pizza option that suits their preferences. You can use conditional statements to match preferences to available options.

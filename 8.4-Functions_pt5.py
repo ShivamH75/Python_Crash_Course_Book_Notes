@@ -25,9 +25,11 @@ showToppings('nonveg')
 ## Using 'as' to Give a Function an Alias
 # if there is some function or module in our file which has same name, we can use 'as'    
 
-from pizza import showToppings as showTopp          # giving alias to 'function' name
+from pizza import calculate_pizza_price as cal_pz_pr          # giving alias to 'function' name
 
-showTopp('veg')
+cal_pz_pr('large', 'onion', 'olive', 'cheese')
+
+
 
 import pizza as pz                                  # giving alias to 'module' name
 

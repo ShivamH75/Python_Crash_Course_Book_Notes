@@ -33,3 +33,30 @@ path_of_file = 'C:\\Users\\Shivam.Hundekari\\Documents\\02 Practice Coding\\Pyth
 readTwo = Path(path_of_file)
 '''file is read wrt its location in storage'''
 print(readTwo.read_text())
+
+
+
+# ____________________________________________________________________________
+from pathlib import Path
+
+pathVar = Path('E:\\010101 SHIVAM\\01_PROGRAMMING\\Python Programming\\Python_crash_couse-Book\\text files\\piDigits.txt')
+
+contentsRead = pathVar.read_text()
+
+for line in contentsRead.split():       #split()
+    print(line)
+
+for line in contentsRead.splitlines():      #splitlines()
+    print(line)
+
+
+# replace 'dolphin' with 'shark' in the text file
+
+path1 = Path('E:\\010101 SHIVAM\\01_PROGRAMMING\\Python Programming\\Python_crash_couse-Book\\text files\\dolphin.txt')
+
+contents = path1.read_text()
+
+contents_modified = contents.replace('dolphin', 'sharks')   
+#replace('oldWord', 'newWord')
+
+print(contents_modified)

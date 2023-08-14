@@ -1,6 +1,6 @@
 .roughWork.py
-# .Pyton_Crash_Couse-3rd_Edition.pdf
+.pcc-3e.pdf
 
 *.log
 *.tmp
-# *.pdf
+*.pdf

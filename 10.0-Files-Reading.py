@@ -2,7 +2,7 @@
 from pathlib import Path
 
 # created an instance 'readFile' from Path class. VS Code shows suggestion for attribute to pass in the class
-readFile = Path('textFile.txt')
+readFile = Path('text files/pidigits.txt')
 
 # created variable named 'contents' and assigned 'read_text()' method to it
 contents = readFile.read_text()
@@ -21,14 +21,14 @@ else:
 ##  Relative and Absolute File Paths
 # Relative path - Relative to the current working directory
 
-readOne = Path('datafiles\\blank_doc01.txt')
+readOne = Path('text files/pidigits.txt')
 '''file is read with ref. of location of current working file'''
 print(readOne.read_text())
 
 # Absolute File Paths - path wrt location in the computer storage
 # if required files does not exist in working directory of current file, we can use absolute path system 
 
-path_of_file = 'C:\\Users\\Shivam.Hundekari\\Documents\\02 Practice Coding\\Python\Python_crash_course-Book\\ch-10-Files\\datafiles\\blank_doc02.txt'
+path_of_file = 'E:\\010101 SHIVAM\\01_PROGRAMMING\\Python Programming\\Python_crash_couse-Book\\text files\\dolphin.txt'
 
 readTwo = Path(path_of_file)
 '''file is read wrt its location in storage'''
@@ -60,3 +60,12 @@ contents_modified = contents.replace('dolphin', 'sharks')
 #replace('oldWord', 'newWord')
 
 print(contents_modified)
+
+'''-------------------------------------------------------------------------'''
+# The encoding argument is needed when your system’s default encoding doesn’t match the encoding of the file that’s being read. 
+# This is most likely to happen when reading from a file that wasn’t created on your system.
+path2 = Path('E:\\010101 SHIVAM\\01_PROGRAMMING\\Python Programming\\Python_crash_couse-Book\\text files\\dolphin.txt')
+
+contents2 = path2.read_text(encoding='utf-8')
+
+print(contents2)

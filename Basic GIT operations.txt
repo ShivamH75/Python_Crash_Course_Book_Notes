@@ -1,0 +1,21 @@
+1. Setup GIT Environment in local
+=>
+create folder, git bash here
+>> git init
+>> git config -g user.name ShivamH75
+>> git config -g user.email hundekari.shivam45@gmail.com
+
+2. Link with GitHub
+Open Git Bash.
+Paste the text below, substituting in your GitHub email address.
+>> ssh-keygen -t ed25519 -C "hundekari.shivam45@gmail.com"
+
+
+
+3. Add local file to GitHub
+>> git add <file_name>
+>> git commit -m "<comments for commit>"
+>> git push -u origin <github branch name>
+
+4. If files are updated in gitHub, update locally
+>> git pull
